@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="FavouritesCollectionViewCellID" id="gTV-IL-0wX" customClass="FavouritesCollectionViewCell" customModule="GoGaga" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="89" height="85"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="89" height="85"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="puppy1" translatesAutoresizingMaskIntoConstraints="NO" id="E1m-TX-XVM">
+                        <rect key="frame" x="19.5" y="8" width="50" height="50"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="50" id="7W8-r9-zrY"/>
+                            <constraint firstAttribute="height" constant="50" id="YRp-Ey-LQ8"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                <integer key="value" value="25"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="music" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7TO-Zi-2eW">
+                        <rect key="frame" x="5" y="64" width="79" height="16"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="16" id="p0F-x0-ald"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="9"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <color key="backgroundColor" red="0.18823529410000001" green="0.0" blue="0.12549019610000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="7TO-Zi-2eW" secondAttribute="bottom" constant="5" id="7U4-3j-vxH"/>
+                <constraint firstAttribute="trailing" secondItem="7TO-Zi-2eW" secondAttribute="trailing" constant="5" id="HGg-RR-lkF"/>
+                <constraint firstItem="7TO-Zi-2eW" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="5" id="TYm-uK-O92"/>
+                <constraint firstItem="E1m-TX-XVM" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="jgX-CO-wcx"/>
+                <constraint firstItem="E1m-TX-XVM" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="8" id="x6k-LP-nXQ"/>
+            </constraints>
+            <size key="customSize" width="89" height="85"/>
+            <connections>
+                <outlet property="favMusicImages" destination="E1m-TX-XVM" id="5ki-xr-WO3"/>
+                <outlet property="favMusicLabels" destination="7TO-Zi-2eW" id="gQw-gn-NcL"/>
+            </connections>
+            <point key="canvasLocation" x="168.84057971014494" y="90.066964285714278"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="puppy1" width="250" height="443.5"/>
+    </resources>
+</document>
